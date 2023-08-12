@@ -1,0 +1,23 @@
+
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: 'Pacifico', cursive;
+    text-decoration: none;
+    list-style: none;
+}
+
+body {
+
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    min-height: 100vh;
+    background: url('./components/assets/2687943.jpg') no-repeat;
+    background-position: center;
+}
+
+h1{
+    color: rgb(40, 108, 255);
+}

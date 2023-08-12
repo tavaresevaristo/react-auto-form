@@ -1,29 +1,27 @@
 import styled from "styled-components";
 
 export const Container = styled.div`
-  
+
   display: flex;
   border: none;
   border-radius: 1.25rem; /* 20px */
   background: rgba(255, 255, 255, 0.6); /* Branco com 50% de opacidade */
   width: 30rem;
   justify-content: center;
-  backdrop-filter: blur(10px);
 
-  h1 {
+  .title {
     text-align: center;
-    font-size: 1.375rem; /* 22px */
+    font-size: .7rem; /* 22px */
     margin: 1.875rem 0 1.25rem 0; /* 30px 0 20px 0 */
   }
 
   .input-box {
     width: 100%;
     display: flex;
-    justify-content: center;
     flex-direction: column;
     margin-top: 1.25rem; /* 20px */
 
-    p{
+    p {
       font-size: 0.75rem; /* 12px */
       font-family: 'Poppins', sans-serif;
       color: red;

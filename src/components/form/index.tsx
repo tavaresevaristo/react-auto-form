@@ -10,9 +10,7 @@ export const Form = () => {
 
             <form onSubmit={handleSubmit(handleFormSubmit)}>
 
-                <div className="title">
-                    <h1>REACT AUTO FORM</h1>
-                </div>
+                <h1>REACT AUTO FORM</h1>
 
                 <div className="input-box">
                     <input {...register('address.bi')}

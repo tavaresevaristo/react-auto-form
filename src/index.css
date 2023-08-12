@@ -16,6 +16,7 @@ body {
     min-height: 100vh;
     background: url('./components/assets/2687943.jpg') no-repeat;
     background-position: center;
+    background-size: cover;
 }
 
 h1{

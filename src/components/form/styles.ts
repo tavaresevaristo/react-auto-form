@@ -2,24 +2,25 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 
-  display: flex;
-  border: none;
-  border-radius: 1.25rem; /* 20px */
-  background: rgba(255, 255, 255, 0.6); /* Branco com 50% de opacidade */
-  width: 30rem;
-  justify-content: center;
+  width: 500px;
+  backdrop-filter: blur(15px);
+  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  border: 2px solid rgba(255, 255, 255, .2);
+  color: #fff;
+  border-radius: 10px;
+  padding: 30px 40px;
 
-  .title {
+  h1 {
     text-align: center;
-    font-size: .7rem; /* 22px */
-    margin: 1.875rem 0 1.25rem 0; /* 30px 0 20px 0 */
+    font-size: 1.3rem; /* 22px */
+    margin: .2rem 0 1.500rem 0; /* 30px 0 20px 0 */
   }
 
   .input-box {
     width: 100%;
     display: flex;
     flex-direction: column;
-    margin-top: 1.25rem; /* 20px */
+    margin-top: 1.0rem; /* 20px */
 
     p {
       font-size: 0.75rem; /* 12px */
@@ -35,9 +36,13 @@ export const Container = styled.div`
       border: none;
       background: transparent;
       padding: 0.8125rem 0.9375rem; /* 13px 15px */
-      border: 0.0625rem solid #aaa; /* 1px */
+      border: 0.0625rem solid #ddd; /* 1px */
       font-family: 'Poppins', sans-serif;
       outline: none;
+
+      &::placeholder {
+        color: #fff;
+      }
     }
   }
 
@@ -52,9 +57,10 @@ export const Container = styled.div`
     border-radius: 0.5rem; /* 8px */
     width: 100%;
     height: 2.8125rem; /* 45px */
+    cursor: pointer;
 
     &:hover {
-      opacity: 0.9;
+      opacity: 0.8;
     }
   }
 `;

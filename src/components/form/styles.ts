@@ -2,18 +2,28 @@ import styled from "styled-components";
 
 export const Container = styled.div`
 
-  width: 500px;
-  backdrop-filter: blur(15px);
-  box-shadow: 0 0 10px rgba(0, 0, 0, .2);
+  width: 450px;
+  background: #fff;
   border: 2px solid rgba(255, 255, 255, .2);
   color: #fff;
   border-radius: 10px;
-  padding: 30px 40px;
+  padding: 20px 40px;
+
+  @media (max-width: 650px){
+    width: 350px;
+    padding: 20px 35px;
+    color: red;
+  }
+
 
   h1 {
     text-align: center;
     font-size: 1.3rem; /* 22px */
     margin: .2rem 0 1.500rem 0; /* 30px 0 20px 0 */
+
+    @media (max-width: 650px){
+      font-size: 1.0rem;
+    }
   }
 
   .input-box {
@@ -35,19 +45,19 @@ export const Container = styled.div`
       border-radius: 0.625rem; /* 10px */
       border: none;
       background: transparent;
-      padding: 0.8125rem 0.9375rem; /* 13px 15px */
-      border: 0.0625rem solid #ddd; /* 1px */
+      padding: 0.699rem 0.9375rem; /* 13px 15px */
+      border: 0.0625rem solid #bbb; /* 1px */
       font-family: 'Poppins', sans-serif;
       outline: none;
 
       &::placeholder {
-        color: #fff;
+        
       }
     }
   }
 
   .btn {
-    margin: 1.875rem 0; /* 30px 0 */
+    margin: 1.5rem 0 1rem 0; /* 30px 0 */
     font-family: 'Poppins', sans-serif;
     font-weight: 400;
     font-size: 1rem; /* 16px */

@@ -12,7 +12,11 @@ export const Container = styled.div`
   @media (max-width: 650px){
     width: 350px;
     padding: 20px 35px;
-    color: red;
+  }
+
+  @media (max-width: 480px){
+    width: 280px;
+    padding: 15px 25px;
   }
 
 

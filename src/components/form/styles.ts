@@ -15,10 +15,14 @@ export const Container = styled.div`
   }
 
   @media (max-width: 480px){
-    width: 280px;
+    width: 320px;
     padding: 15px 25px;
   }
 
+  @media (max-width: 480px){
+    width: 240px;
+    padding: 15px 25px;
+  }
 
   h1 {
     text-align: center;
@@ -54,8 +58,10 @@ export const Container = styled.div`
       font-family: 'Poppins', sans-serif;
       outline: none;
 
-      &::placeholder {
-        
+      @media (max-width: 480px){
+        &:placeholder{
+          font-size: 5px;
+        }        
       }
     }
   }

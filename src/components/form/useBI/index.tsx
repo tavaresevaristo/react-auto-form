@@ -33,7 +33,7 @@ export const useBI = () => {
 
     const handleFormSubmit = (data: formProp) => {
         console.log(data.address)
-        alert('Olá, abra o console ' + data.address.nome)
+        alert(`Olá, sou o Tavares João, agradeço a você ${data.address.nome} por participar da experiêcia.`)
     }
 
     const handleSetData = useCallback((data: AddressProp) => {

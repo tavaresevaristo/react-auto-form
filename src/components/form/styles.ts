@@ -15,13 +15,28 @@ export const Container = styled.div`
   }
 
   @media (max-width: 480px){
-    width: 320px;
-    padding: 15px 25px;
+    width: 340px;
+    padding: 20px 30px;
+  }
+ 
+  @media (max-width: 400px){
+    width: 310px;
+    padding: 20px 30px;
+  }
+  
+  @media (max-width: 347px){
+    width: 300px;
+    padding: 20px 30px;
   }
 
-  @media (max-width: 480px){
-    width: 240px;
+  @media (max-width: 321px){
+    width: 250px;
     padding: 15px 25px;
+  }
+  
+  @media (max-width: 273px){
+    width: 230px;
+    padding: 10px 20px;
   }
 
   h1 {
@@ -57,12 +72,6 @@ export const Container = styled.div`
       border: 0.0625rem solid #bbb; /* 1px */
       font-family: 'Poppins', sans-serif;
       outline: none;
-
-      @media (max-width: 480px){
-        &:placeholder{
-          font-size: 5px;
-        }        
-      }
     }
   }
 
